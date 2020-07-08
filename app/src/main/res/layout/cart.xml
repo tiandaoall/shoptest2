@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/goodspic"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="#772222"></ImageView>
+
+        <TextView
+            android:id="@+id/goodsname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/goodspic"
+            android:text="商品名字"
+            android:textSize="30dp">
+
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/rmb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/goodsname"
+            android:layout_marginTop="60dp"
+            android:layout_toRightOf="@id/goodspic"
+            android:text="¥"
+            android:textColor="#FF0000"
+            android:textSize="30dp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/goodsprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/goodsname"
+            android:layout_marginTop="60dp"
+            android:layout_toRightOf="@id/rmb"
+            android:text="价格"
+            android:textColor="#FF0000"
+            android:textSize="30dp">
+        </TextView>
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/goodsname"
+            android:layout_toRightOf="@id/goodsprice"
+            android:layout_marginTop="55dp"
+            android:layout_marginLeft="40dp"
+            android:text="-"
+            android:textSize="30dp"
+            android:background="#00000000"
+            >
+
+        </Button>
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/goodsname"
+            android:layout_toRightOf="@id/goodsprice"
+            android:layout_marginTop="55dp"
+            android:layout_marginLeft="140dp"
+            android:text="+"
+            android:textSize="30dp"
+            android:background="#00000000"
+            >
+
+        </Button>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="数量"
+            android:layout_below="@id/goodsname"
+            android:layout_toRightOf="@id/goodsprice"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="80dp"
+            android:textSize="30dp">
+
+        </TextView>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+
+
+            <ImageView
+                android:id="@+id/goodspic"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="#A24444"
+
+                >
+            </ImageView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="260dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/goodsname"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="商品名"
+                android:textSize="20dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/rmb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/goodsname"
+                android:text="¥"
+                android:textSize="30dp"
+                android:textColor="#FF0000"
+                >
+
+            </TextView>
+            <TextView
+                android:id="@+id/goodsprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/goodsname"
+                android:layout_toRightOf="@id/rmb"
+                android:text="价格"
+                android:textSize="30dp"
+
+                >
+
+            </TextView>
+            <TextView
+                android:id="@+id/salesvolume"
+                android:layout_below="@id/goodsprice"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="0dp"
+                android:text="销量"
+                android:textSize="20dp"
+                />
+            <TextView
+                android:id="@+id/goodsBrand"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/salesvolume"
+                android:layout_marginTop="0dp"
+                android:text="品牌"
+                android:textSize="30dp"
+                />
+            <ImageView
+                android:id="@+id/addcart"
+                android:layout_toRightOf="@id/goodsBrand"
+                android:layout_marginTop="100dp"
+                android:layout_marginLeft="120dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="加入购物车"
+                android:textSize="30dp"
+                android:background="@drawable/cart"
+                />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

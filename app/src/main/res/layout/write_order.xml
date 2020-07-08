@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+            <Button
+                android:id="@+id/back"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="0dp"
+                android:background="@drawable/arrow_left"
+                android:textSize="25dp">
+
+            </Button>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="90dp"
+                android:text="填写订单"
+                android:textSize="30dp"
+                android:fontFamily="sans-serif-black"
+                android:layout_centerInParent="true"
+                />
+        </LinearLayout>
+
+        <ScrollView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+        <RelativeLayout
+            android:id="@+id/userAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            >
+            <TextView
+                android:id="@+id/receiverAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用户地址"
+                android:textSize="30dp"
+                >
+            </TextView>
+            <TextView
+                android:id="@+id/receiverName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用户名"
+                android:layout_below="@id/receiverAddress"
+                android:textSize="15dp">
+
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="电话号码"
+                android:textSize="15dp"
+                android:layout_toRightOf="@id/receiverName"
+                android:layout_below="@id/receiverAddress"
+                android:layout_marginLeft="15dp"
+
+                >
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:background="@drawable/arrow_right"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                >
+
+            </ImageView>
+
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="50dp"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="订单号:"
+                    android:textSize="25dp"
+                    android:fontFamily="sans-serif-black"
+                    >
+                </TextView>
+                <TextView
+                    android:id="@+id/orderid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="25dp"
+                    android:fontFamily="sans-serif-black"
+
+                    >
+
+                </TextView>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/goodsImg"
+                    android:layout_width="120dp"
+                    android:layout_height="110dp"
+                    android:background="#FA9797"
+                    >
+                </ImageView>
+                <TextView
+                    android:id="@+id/goodsName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/goodsImg"
+                    android:layout_marginLeft="10dp"
+                    android:text="商品名"
+                    android:textSize="20dp"
+                    >
+
+                </TextView>
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/goodsImg"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="80dp"
+                    android:text="X"
+                    android:textSize="20dp"
+                    >
+
+                </TextView>
+                <TextView
+                    android:id="@+id/buyNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/goodsImg"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="80dp"
+
+                    android:text="5"
+                    android:textSize="20dp"
+                    >
+
+                </TextView>
+
+
+
+                <TextView
+                    android:id="@id/rmb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:text="¥"
+                    android:layout_toRightOf="@id/goodsImg"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginLeft="200dp">
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/totalPrice"
+                    android:text="52525"
+                    android:layout_toRightOf="@id/rmb"
+                    android:layout_marginTop="70dp"
+                    android:textSize="25dp">
+
+                </TextView>
+
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="50dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="订单号:"
+                        android:textSize="25dp"
+                        android:fontFamily="sans-serif-black"
+                        >
+                    </TextView>
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="25dp"
+                        android:fontFamily="sans-serif-black"
+
+                        >
+
+                    </TextView>
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+
+                        android:layout_width="120dp"
+                        android:layout_height="110dp"
+                        android:background="#FA9797"
+                        >
+                    </ImageView>
+
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="50dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="订单号:"
+                        android:textSize="25dp"
+                        android:fontFamily="sans-serif-black"
+                        >
+                    </TextView>
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="25dp"
+                        android:fontFamily="sans-serif-black"
+
+                        >
+
+                    </TextView>
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+
+                        android:layout_width="120dp"
+                        android:layout_height="110dp"
+                        android:background="#FA9797"
+                        >
+                    </ImageView>
+
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="50dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="订单号:"
+                        android:textSize="25dp"
+                        android:fontFamily="sans-serif-black"
+                        >
+                    </TextView>
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="25dp"
+                        android:fontFamily="sans-serif-black"
+
+                        >
+
+                    </TextView>
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+
+                        android:layout_width="120dp"
+                        android:layout_height="110dp"
+                        android:background="#FA9797"
+                        >
+                    </ImageView>
+
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="50dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="订单号:"
+                        android:textSize="25dp"
+                        android:fontFamily="sans-serif-black"
+                        >
+                    </TextView>
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="25dp"
+                        android:fontFamily="sans-serif-black"
+
+                        >
+
+                    </TextView>
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+
+                        android:layout_width="120dp"
+                        android:layout_height="110dp"
+                        android:background="#FA9797"
+                        >
+                    </ImageView>
+
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                </TextView>
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/endone"
+        android:background="#9C9C9C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+
+        <TextView
+            android:id="@+id/rmb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥"
+            android:textColor="#FF0000"
+            android:textSize="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/orderPrice"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/orderPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="56465456"
+            android:textSize="40dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/rmb"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </TextView>
+
+
+        <Button
+            android:id="@+id/settlement"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_buy"
+            android:text="提交订单"
+            android:textSize="20dp"
+
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="@+id/endone"
+
+
+            >
+
+        </Button>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

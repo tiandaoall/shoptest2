@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="订单号:"
+            android:textSize="25dp"
+            android:fontFamily="sans-serif-black"
+            >
+        </TextView>
+        <TextView
+            android:id="@+id/orderid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="25dp"
+            android:fontFamily="sans-serif-black"
+
+            >
+
+        </TextView>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/goodsImg"
+                android:layout_width="120dp"
+                android:layout_height="110dp"
+                android:background="#FA9797"
+                >
+            </ImageView>
+            <TextView
+                android:id="@+id/goodsName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/goodsImg"
+                android:layout_marginLeft="10dp"
+                android:text="商品名"
+                android:textSize="20dp"
+                >
+
+            </TextView>
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/goodsImg"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="80dp"
+                android:text="X"
+                android:textSize="20dp"
+                >
+
+            </TextView>
+            <TextView
+                android:id="@+id/buyNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/goodsImg"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="80dp"
+
+                android:text="5"
+                android:textSize="20dp"
+                >
+
+            </TextView>
+
+
+
+            <TextView
+                android:id="@id/rmb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:text="¥"
+                android:layout_toRightOf="@id/goodsImg"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="200dp">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/totalPrice"
+                android:text="52525"
+                android:layout_toRightOf="@id/rmb"
+                android:layout_marginTop="30dp"
+                android:textSize="25dp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="去付款"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="70dp"
+                android:textSize="30dp"
+                android:background="#FF9800"
+
+                >
+
+            </TextView>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
