@@ -42,7 +42,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
     }
 
     private void init(){
-
+        userName=findViewById(R.id.userName);
     }
     @Override
     public void onClick(View view) {
