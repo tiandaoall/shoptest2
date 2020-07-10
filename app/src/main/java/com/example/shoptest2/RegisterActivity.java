@@ -28,9 +28,10 @@ import okhttp3.Response;
 
 public class RegisterActivity extends AppCompatActivity implements View.OnClickListener {
     private TextView register;
+    private TextView back;
     private AlertDialog.Builder builder;
     private String userId="";
-    private EditText userName,PassWord,confirmPassWord;
+    private EditText userName,PassWord,confirmPassWord,email,phone;
     private Context context=this;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
