@@ -28,7 +28,7 @@ import okhttp3.Response;
 
 public class LoginActivity  extends AppCompatActivity  implements View.OnClickListener {
     private EditText userId,passWord;
-    private TextView modifyPassword,forgetPassword,login,register;
+    private TextView forgetPassword,login,register;
 
     private final Context context=this;
     @Override
@@ -46,7 +46,6 @@ public class LoginActivity  extends AppCompatActivity  implements View.OnClickLi
         register=findViewById(R.id.register);
      //   userId.setOnClickListener(this);
       //  passWord.setOnClickListener(this);
-        modifyPassword.setOnClickListener(this);
         forgetPassword.setOnClickListener(this);
         login.setOnClickListener(this);
         register.setOnClickListener(this);

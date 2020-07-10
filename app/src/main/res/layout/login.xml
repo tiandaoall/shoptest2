@@ -60,9 +60,8 @@
             <EditText
                 android:id="@+id/userId"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="请输入您的账号"
-                >
+                android:layout_height="63dp"
+                android:hint="请输入您的账号">
 
             </EditText>
         </LinearLayout>
