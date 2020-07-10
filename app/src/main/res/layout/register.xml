@@ -109,43 +109,48 @@
                 >
             </EditText>
         </LinearLayout>
-        <LinearLayout
+        <RelativeLayout
+            android:layout_marginTop="50dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:gravity="center"
+
             >
+            <!--            <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:text=""
+                            android:textSize="25dp">
+
+                        </TextView>-->
             <TextView
+                android:id="@+id/register"
                 android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:text=""
-                android:textSize="25dp">
+                android:layout_height="wrap_content"
+                android:text="  注册   "
+                android:textSize="35dp"
+                android:layout_gravity="center"
+                android:background="#2196F3"
+                android:layout_marginLeft="60dp"
+                >
 
             </TextView>
             <TextView
-                android:layout_width="300dp"
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="              确定"
+                android:layout_marginLeft="80dp"
+                android:layout_toRightOf="@+id/register"
+                android:text="  返回  "
                 android:textSize="35dp"
                 android:layout_gravity="center"
                 android:background="#2196F3"
                 >
 
             </TextView>
-            <TextView
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="              返回"
-                android:textSize="35dp"
-                android:layout_gravity="center"
-                android:background="#2196F3"
-                >
-
-            </TextView>
 
 
 
-        </LinearLayout>
+        </RelativeLayout>
     </LinearLayout>
 </LinearLayout>

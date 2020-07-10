@@ -85,12 +85,11 @@
             </TextView>
 
             <ImageView
-                android:layout_width="30dp"
+                android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:background="@drawable/arrow_right"
                 android:layout_alignParentRight="true"
-                android:layout_marginTop="10dp"
-                >
+                android:layout_marginTop="15dp"
+                android:background="@drawable/address">
 
             </ImageView>
 
@@ -434,7 +433,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/endone"
-        android:background="#9C9C9C"
+        android:background="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

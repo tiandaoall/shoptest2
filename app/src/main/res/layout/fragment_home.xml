@@ -5,13 +5,56 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ScrollView
-        android:layout_width="wrap_content"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/endone"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <EditText
+
+                android:id="@+id/search"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edit_background" />
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/search"
+                android:background="@drawable/search"
+                android:textSize="25dp">
+
+            </Button>
+
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:id="@+id/goodsview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/endone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
 
         <LinearLayout
@@ -19,33 +62,6 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center">
-
-                <EditText
-
-                    android:id="@+id/search"
-                    android:layout_width="350dp"
-                    android:layout_height="50dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="5dp"
-                    android:background="@drawable/edit_background" />
-
-                <Button
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-
-                    android:layout_marginLeft="0dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_toRightOf="@id/search"
-                    android:background="@drawable/search"
-                    android:textSize="25dp">
-
-                </Button>
-
-            </RelativeLayout>
 
             <EditText
 
@@ -54,7 +70,7 @@
                 android:layout_height="50dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="5dp"
-                android:background="@drawable/edit_background" />
+                android:background="#FC0000" />
 
             <EditText
 
@@ -147,30 +163,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/edit_background" />
-            <EditText
 
-
-                android:layout_width="350dp"
-                android:layout_height="50dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="5dp"
-                android:background="@drawable/edit_background" />
-            <EditText
-
-
-                android:layout_width="350dp"
-                android:layout_height="50dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="5dp"
-                android:background="@drawable/edit_background" />
-            <EditText
-
-
-                android:layout_width="350dp"
-                android:layout_height="50dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="5dp"
-                android:background="@drawable/edit_background" />
             <EditText
 
 
@@ -180,11 +173,63 @@
                 android:layout_marginTop="5dp"
                 android:background="@drawable/edit_background" />
 
+            <EditText
 
 
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edit_background" />
+
+            <EditText
+
+
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edit_background" />
+
+            <EditText
+
+
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edit_background" />
+
+            <EditText
+
+
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edit_background" />
+
+            <EditText
+
+
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:background="#E70000" />
+
+            <EditText
+
+
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:background="#9E7800" />
 
 
         </LinearLayout>
     </ScrollView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
