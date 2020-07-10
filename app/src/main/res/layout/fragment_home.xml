@@ -10,6 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#FFFFFF"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,16 +26,16 @@
             <EditText
 
                 android:id="@+id/search"
-                android:layout_width="350dp"
+                android:layout_width="300dp"
                 android:layout_height="50dp"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="15dp"
                 android:layout_marginTop="5dp"
+                android:layout_alignParentLeft="true"
                 android:background="@drawable/edit_background" />
 
             <Button
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-
                 android:layout_marginLeft="0dp"
                 android:layout_marginTop="5dp"
                 android:layout_toRightOf="@id/search"
@@ -66,16 +67,28 @@
             <EditText
 
 
-                android:layout_width="350dp"
+                android:layout_width="300dp"
                 android:layout_height="50dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="5dp"
-                android:background="#FC0000" />
+                android:background="#FC0000"
+                android:layout_marginRight="20dp"
+                />
 
             <EditText
 
 
-                android:layout_width="350dp"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/edit_background" />
+
+            <EditText
+
+
+                android:layout_width="300dp"
                 android:layout_height="50dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="5dp"
@@ -84,7 +97,7 @@
             <EditText
 
 
-                android:layout_width="350dp"
+                android:layout_width="300dp"
                 android:layout_height="50dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="5dp"
@@ -93,7 +106,15 @@
             <EditText
 
 
-                android:layout_width="350dp"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edit_background" />
+
+            <EditText
+
+                android:layout_width="300dp"
                 android:layout_height="50dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="5dp"
@@ -102,7 +123,7 @@
             <EditText
 
 
-                android:layout_width="350dp"
+                android:layout_width="300dp"
                 android:layout_height="50dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="5dp"
@@ -111,7 +132,7 @@
             <EditText
 
 
-                android:layout_width="350dp"
+                android:layout_width="300dp"
                 android:layout_height="50dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="5dp"
@@ -120,25 +141,7 @@
             <EditText
 
 
-                android:layout_width="350dp"
-                android:layout_height="50dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="5dp"
-                android:background="@drawable/edit_background" />
-
-            <EditText
-
-
-                android:layout_width="350dp"
-                android:layout_height="50dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="5dp"
-                android:background="@drawable/edit_background" />
-
-            <EditText
-
-
-                android:layout_width="350dp"
+                android:layout_width="300dp"
                 android:layout_height="50dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="5dp"
@@ -148,7 +151,7 @@
             <EditText
 
 
-                android:layout_width="350dp"
+                android:layout_width="300dp"
                 android:layout_height="50dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="5dp"
@@ -158,7 +161,25 @@
             <EditText
 
 
-                android:layout_width="350dp"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edit_background" />
+
+            <EditText
+
+
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edit_background" />
+
+            <EditText
+
+
+                android:layout_width="300dp"
                 android:layout_height="50dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="5dp"
@@ -176,7 +197,7 @@
             <EditText
 
 
-                android:layout_width="350dp"
+                android:layout_width="300dp"
                 android:layout_height="50dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="5dp"
@@ -185,7 +206,7 @@
             <EditText
 
 
-                android:layout_width="350dp"
+                android:layout_width="300dp"
                 android:layout_height="50dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="5dp"
@@ -194,25 +215,7 @@
             <EditText
 
 
-                android:layout_width="350dp"
-                android:layout_height="50dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="5dp"
-                android:background="@drawable/edit_background" />
-
-            <EditText
-
-
-                android:layout_width="350dp"
-                android:layout_height="50dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="5dp"
-                android:background="@drawable/edit_background" />
-
-            <EditText
-
-
-                android:layout_width="350dp"
+                android:layout_width="300dp"
                 android:layout_height="50dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="5dp"
@@ -221,7 +224,7 @@
             <EditText
 
 
-                android:layout_width="350dp"
+                android:layout_width="300dp"
                 android:layout_height="50dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="5dp"

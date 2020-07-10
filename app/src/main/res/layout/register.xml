@@ -80,7 +80,7 @@
             </ImageView>
 
             <EditText
-                android:id="@+id/PassWord"
+                android:id="@+id/passWord"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="请输入您的密码"
@@ -106,6 +106,50 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="请确认您的密码"
+                >
+            </EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="0dp"
+                android:background="@drawable/email"
+                android:textSize="25dp">
+
+            </ImageView>
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请确认您的邮箱"
+                >
+            </EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="0dp"
+                android:background="@drawable/phone"
+                android:textSize="25dp">
+
+            </ImageView>
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请确认您的手机号"
                 >
             </EditText>
         </LinearLayout>
@@ -139,7 +183,7 @@
                 android:id="@+id/back"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="80dp"
+                android:layout_marginLeft="40dp"
                 android:layout_toRightOf="@+id/register"
                 android:text="  返回  "
                 android:textSize="35dp"

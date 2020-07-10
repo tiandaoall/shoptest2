@@ -50,12 +50,12 @@
             android:textSize="30dp">
         </TextView>
         <Button
-            android:layout_width="40dp"
-            android:layout_height="50dp"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
             android:layout_below="@id/goodsname"
             android:layout_toRightOf="@id/goodsprice"
             android:layout_marginTop="55dp"
-            android:layout_marginLeft="40dp"
+            android:layout_marginLeft="10dp"
             android:text="-"
             android:textSize="30dp"
             android:background="#00000000"
@@ -63,14 +63,14 @@
 
         </Button>
         <Button
-            android:layout_width="40dp"
-            android:layout_height="50dp"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
             android:layout_below="@id/goodsname"
             android:layout_toRightOf="@id/goodsprice"
             android:layout_marginTop="55dp"
-            android:layout_marginLeft="140dp"
+            android:layout_marginLeft="90dp"
             android:text="+"
-            android:textSize="30dp"
+            android:textSize="20dp"
             android:background="#00000000"
             >
 
@@ -82,8 +82,8 @@
             android:layout_below="@id/goodsname"
             android:layout_toRightOf="@id/goodsprice"
             android:layout_marginTop="60dp"
-            android:layout_marginLeft="80dp"
-            android:textSize="30dp">
+            android:layout_marginLeft="40dp"
+            android:textSize="25dp">
 
         </TextView>
 

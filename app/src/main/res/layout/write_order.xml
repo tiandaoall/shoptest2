@@ -54,14 +54,13 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             >
+
             <TextView
                 android:id="@+id/receiverAddress"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="用户地址"
-                android:textSize="30dp"
-                >
-            </TextView>
+                android:textSize="30dp"></TextView>
             <TextView
                 android:id="@+id/receiverName"
                 android:layout_width="wrap_content"
@@ -72,6 +71,7 @@
 
             </TextView>
             <TextView
+                android:id="@+id/phoneNumber"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="电话号码"
@@ -85,6 +85,7 @@
             </TextView>
 
             <ImageView
+                android:id="@+id/selectAddress"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_alignParentRight="true"
@@ -189,7 +190,7 @@
                     android:text="¥"
                     android:layout_toRightOf="@id/goodsImg"
                     android:layout_marginTop="70dp"
-                    android:layout_marginLeft="200dp">
+                    android:layout_marginLeft="140dp">
                 </TextView>
                 <TextView
                     android:layout_width="wrap_content"

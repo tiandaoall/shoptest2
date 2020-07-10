@@ -12,14 +12,23 @@ import androidx.appcompat.app.AppCompatActivity;
 public class RegisterActivity extends AppCompatActivity implements View.OnClickListener {
     private TextView register;
     private AlertDialog.Builder builder;
+    private TextView userId;
+    private TextView passWord;
+    private TextView confirmPassWord;
+    private TextView back;
     private String a="2900";
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.register);
         register=findViewById(R.id.register);
+        userId=findViewById(R.id.userId);
+        passWord=findViewById(R.id.passWord);
         register.setOnClickListener(this);
+        back.setOnClickListener(this);
 
 
     }
