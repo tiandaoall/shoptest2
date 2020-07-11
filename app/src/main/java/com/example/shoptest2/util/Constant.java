@@ -13,6 +13,8 @@ public final class Constant {
     /**
      * 结果码 ,失败*/
     public  static final  int result_failed=2;
+    /**结果码 ,返回*/
+    public static  final  int result_back=3;
     /**
      * 忘记密码请求吗*/
     public final static int forgetPasswordCode=1;

@@ -42,6 +42,7 @@ public class HttpHelper {
             void success(Call call, Response response) throws IOException;
 
             void failed(Call call, IOException e);
+
         }
 
         private HttpHelper() {
@@ -133,11 +134,12 @@ public class HttpHelper {
         public void getDataAsyn(String url, final NetCall netCall) {
             //1 构造Request
             Request.Builder builder = new Request.Builder();
-            Request request = builder.get().url(url).header("token",token).build();
+            Request request = builder.get().url(url).header("token",getToken()).build();
             //2 将Request封装为Call
             Call call = mOkHttpClient.newCall(request);
             //3 执行Call
             call.enqueue(new Callback() {
+
                 @Override
                 public void onFailure(Call call, IOException e) {
                     netCall.failed(call, e);

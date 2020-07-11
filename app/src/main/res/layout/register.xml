@@ -83,6 +83,7 @@
                 android:id="@+id/passWord"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:inputType="textPassword"
                 android:hint="请输入您的密码"></EditText>
         </LinearLayout>
         <LinearLayout
@@ -103,6 +104,7 @@
                 android:id="@+id/confirmPassWord"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:inputType="textPassword"
                 android:hint="请确认您的密码"
                 >
             </EditText>

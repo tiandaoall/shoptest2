@@ -115,13 +115,15 @@ public class LoginActivity  extends AppCompatActivity  implements View.OnClickLi
     @Override
     protected  void  onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        Bundle bundle=data.getBundleExtra("msg");
+
         switch (requestCode){
             case Constant.registerCode:
                 if(resultCode==Constant.result_success)
                 {
-                    userId.setText(bundle.getString("userid"));
-                }else
+                    Bundle bundle=data.getBundleExtra("msg");
+                    userId.setText(bundle.getString("userId"));
+                }
+                if(resultCode==Constant.result_failed)
                 {
                     Toast.makeText(context,"注册失败", Toast.LENGTH_SHORT).show();
                 }
