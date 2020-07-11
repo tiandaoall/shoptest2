@@ -170,6 +170,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                                 if((boolean) msg.get("flag")) {
                                     builder = new AlertDialog.Builder(context).setIcon(R.mipmap.ic_launcher).setTitle("注册成功")
                                             .setMessage("您的账号为：" + userId + "         请牢记")
+                                            .setIcon(R.drawable.email)
                                             .setPositiveButton("确定", new DialogInterface.OnClickListener() {
                                                 @Override
                                                 public void onClick(DialogInterface dialogInterface, int i) {

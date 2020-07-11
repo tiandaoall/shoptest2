@@ -57,7 +57,8 @@ public class LoginActivity  extends AppCompatActivity  implements View.OnClickLi
         {
 
             case  R.id.forgetPassword:
-
+                Intent forgetPasswordIntent=new Intent(context,ForgetPasswordActivity.class);
+                startActivityForResult(forgetPasswordIntent,Constant.forgetPasswordCode);
                 break;
             case R.id.login:
                 final HttpHelper instance=HttpHelper.getInstance();
@@ -106,8 +107,8 @@ public class LoginActivity  extends AppCompatActivity  implements View.OnClickLi
                 });
                 break;
             case  R.id.register:
-                Intent intent =new Intent(context,RegisterActivity.class);
-                startActivityForResult(intent,Constant.registerCode);
+                Intent registerIntent =new Intent(context,RegisterActivity.class);
+                startActivityForResult(registerIntent,Constant.registerCode);
                 break;
         }
 
@@ -132,9 +133,6 @@ public class LoginActivity  extends AppCompatActivity  implements View.OnClickLi
                 if(requestCode==Constant.result_success)
                 {
 
-                }else
-                {
-                    Toast.makeText(context,"注册失败", Toast.LENGTH_SHORT).show();
                 }
                 break;
 
