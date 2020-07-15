@@ -111,7 +111,6 @@ public class ForgetPasswordActivity extends AppCompatActivity implements View.On
         back.setOnClickListener(this);
         ok.setOnClickListener(this);
     }
-
     @Override
     public void onClick(View view) {
 

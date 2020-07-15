@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <RelativeLayout
-    android:id="@+id/card_view"
+    android:id="@+id/goodItem"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="120dip"
@@ -13,7 +13,7 @@
     >
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/goodImage"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
@@ -27,8 +27,8 @@
         android:layout_alignParentTop="true"
         android:layout_marginLeft="13dp"
         android:layout_marginTop="16dp"
-        android:layout_toEndOf="@+id/imageView"
-        android:layout_toRightOf="@+id/imageView"
+        android:layout_toEndOf="@+id/goodImage"
+        android:layout_toRightOf="@+id/goodImage"
         android:text="goodsName"
         android:textColor="@android:color/black"
         android:textSize="18sp"
@@ -45,10 +45,22 @@
 
         android:textColor="@color/txt_color"
         android:textSize="13sp"/>
-
+    <TextView
+        android:id="@+id/good_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/goodsSummary"
+        android:layout_alignLeft="@+id/goodsSummary"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="17dp"
+        android:text="价格"
+        android:textColor="@color/txt_color"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        />
 
     <LinearLayout
-        android:id="@+id/buyNumber"
+        android:id="@+id/layout_num"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -61,33 +73,21 @@
         android:orientation="horizontal">
 
 
-        <TextView
-            android:id="@+id/goods_num_reduce"
-            android:layout_width="22dp"
-            android:layout_height="22dp"
-            android:background="@drawable/selector_item_child"
-            android:text="-"
-            android:gravity="center"
-
-            />
-
-        <TextView
-            android:id="@+id/goods_num"
-            android:layout_width="35dp"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="0"
-            />
-
-        <TextView
-            android:id="@+id/goods_num_add"
-            android:layout_width="22dp"
-            android:layout_height="22dp"
-            android:background="@drawable/selector_item_child"
-            android:text="+"
-            android:gravity="center"/>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btn_buy"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="0dp"
+            android:backgroundTint="@color/color_light_blue"
+            android:src="@mipmap/buy_icon" />
 
     </LinearLayout>
 
 
 </RelativeLayout>
+

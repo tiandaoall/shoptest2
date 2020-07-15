@@ -31,9 +31,6 @@ public class OrderActivity extends AppCompatActivity implements View.OnClickList
         select=findViewById(R.id.select);
         goodsImg=findViewById(R.id.goodsImg);
         gotobuy.setOnClickListener(this);
-
-
-
     }
 
 

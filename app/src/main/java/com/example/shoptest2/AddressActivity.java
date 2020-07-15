@@ -42,7 +42,6 @@ public class AddressActivity extends AppCompatActivity implements View.OnClickLi
             public void onSelected(ProvinceBean province, CityBean city, DistrictBean district) {
                 //将选择的地址填入tv_address_set中
                 receiverAddress.setText(province.toString().trim() + city.toString().trim() + district.toString().trim());
-
             }
 
             @Override

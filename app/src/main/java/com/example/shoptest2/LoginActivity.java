@@ -82,6 +82,8 @@ public class LoginActivity  extends AppCompatActivity  implements View.OnClickLi
                                    {
                                        Intent intent=new Intent(context,MainActivity.class);
                                        instance.setToken((String)msg.get("token"));
+                                       Constant.setUserId((String)msg.get("userId"));
+                                       Constant.setUserName((String)msg.get("userName"));
                                        startActivity(intent);
                                    }
                                 } catch (Exception e) {
