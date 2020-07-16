@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/goodsImg"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:background="#00DDB6" />
+
+            <TextView
+                android:id="@+id/goodsPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/goodsImg"
+                android:layout_marginLeft="5dp"
+                android:text="价格"
+                android:textSize="30dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/goodsName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/goodsPrice"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="sans-serif-black"
+                android:text="商品名字"
+                android:textSize="25dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/goodsSummary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/goodsName"
+                android:text="商品概要"
+                android:layout_marginLeft="5dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/goodsBrand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/goodsImg"
+                android:layout_marginLeft="230dp"
+                android:layout_marginTop="0dp"
+                android:layout_toRightOf="@+id/goodsPrice"
+                android:text="品牌"
+                android:textSize="30dp">
+
+            </TextView>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/endone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+
+        <Button
+            android:id="@+id/addCart"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_buy"
+            android:text="加入购物车"
+            android:textSize="20dp"
+
+            app:layout_constraintRight_toRightOf="@+id/endone"
+            app:layout_constraintTop_toTopOf="parent"
+
+
+            >
+
+        </Button>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
