@@ -30,7 +30,7 @@ public class GoodsAdapter extends BaseQuickAdapter<GoodsEntity, BaseViewHolder> 
     @Override
     protected void convert(BaseViewHolder helper, GoodsEntity item) {
 
-            helper.setText(R.id.goodsName,item.getGoodsName());
+        helper.setText(R.id.goodsName,item.getGoodsName());
 
         helper.setText(R.id.goodsSummary,item.getGoodsName());
         helper.addOnClickListener(R.id.btn_buy);

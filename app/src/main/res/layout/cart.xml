@@ -64,10 +64,10 @@
         <TextView
             android:id="@+id/goods_num_reduce"
             android:layout_width="22dp"
-            android:layout_height="22dp"
+            android:layout_height="wrap_content"
             android:background="@drawable/selector_item_child"
-            android:text="-"
             android:gravity="center"
+            android:text="-"
 
             />
 

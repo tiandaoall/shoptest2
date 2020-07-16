@@ -19,6 +19,7 @@ android {
     }
 }
 
+
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'androidx.appcompat:appcompat:1.0.2'
@@ -36,4 +37,3 @@ dependencies {
     implementation group: 'com.alibaba', name: 'fastjson', version: '1.2.71'
     implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30'
 }
-

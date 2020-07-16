@@ -19,7 +19,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="订单号:"
-            android:textSize="25dp"
+            android:textSize="20dp"
             android:fontFamily="sans-serif-black"
             >
         </TextView>
@@ -28,7 +28,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text=""
-            android:textSize="25dp"
+            android:textSize="20dp"
             android:fontFamily="sans-serif-black"
 
             >

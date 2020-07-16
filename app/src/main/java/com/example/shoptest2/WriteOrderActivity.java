@@ -34,6 +34,8 @@ public class WriteOrderActivity extends AppCompatActivity implements View.OnClic
 
     }
 
+
+
     @Override
     public void onClick(View view) {
         switch (view.getId()){
