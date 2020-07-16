@@ -23,9 +23,12 @@ public class MineAdapter extends BaseQuickAdapter<OrdersEntity, BaseViewHolder> 
         double totalprice=Integer.parseInt(item.getBuyNumber().toString())*Double.parseDouble(item.getGoodsPrices().toString());
         helper.setText(R.id.totalPrice,totalprice+" ");
         //helper.setImageResource(R.id.goodImage, Integer.parseInt(item.getGoodsImg()));
-/*        if (item.getOrderState()==3) {
-            helper.setImageResource(R.id.btn_buy,R.drawable.confirmreceive);
-        }*/
+        if (item.getOrderState()==1){
+            helper.setImageDrawable(R.id.btn_buy,helper.itemView.getResources().getDrawable(R.drawable.payorder));
+        }
+       else if (item.getOrderState()==3) {
+           helper.setImageDrawable(R.id.btn_buy,helper.itemView.getResources().getDrawable(R.drawable.confirmreceive));
+        }
 
 
        helper.addOnClickListener(R.id.btn_buy);
