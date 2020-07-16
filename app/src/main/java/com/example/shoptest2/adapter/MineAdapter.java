@@ -26,6 +26,7 @@ public class MineAdapter extends BaseQuickAdapter<OrdersEntity, BaseViewHolder> 
 /*        if (item.getOrderState()==3) {
             helper.setImageResource(R.id.btn_buy,R.drawable.confirmreceive);
         }*/
+
        helper.addOnClickListener(R.id.btn_buy);
     }
 }
